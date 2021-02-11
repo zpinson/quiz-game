@@ -14,47 +14,32 @@
 
     <div class= "card timer">
         <div class = "timer-text">
-        <div class="large-font timer-count">10</div>
+        <div class="large-font timer-count">60</div>
         <h3>seconds remaining</h3>
     </div>
    
     <div id="game-area">
-        <div class="question" id="first">
-            <h2>question 1</h2>
-            <ul>
-                <li><button class="false">answer 1</button></li>
-                <li><button class="true">answer 2</button></li>
-                <li><button class="false">answer 3</button></li>
-                <li><button class="false">answer 4</button></li>
+        
+        <h2 id="question"></h2>
+        <ul id="list">
+            <li ><button id="first"></button></li>
+            <li ><button id="second"></button></li>
+            <li ><button id="third"></button></li>
+            <li ><button id="fourth"></button></li>
                 
-            </ul>
-        </div>
-        <div class="question" id="secound">
-            <h2>question 2</h2>
-            <ul>
-                <li><button class="true">answer 1</button></li>
-                <li><button class="false">answer 2</button></li> 
-                <li><button class="false">answer 3</button></li>
-                <li><button class="false">answer 4</button></li>
-            </ul>
-            
-        </div>
-        <div class="question" id="third"> 
-            <h2>question 3</h2>
-            <ul> 
-                <li><button class="false">answer 1</button></li>
-                <li><button class="false">answer 2</button></li>
-                <li><button class="true">answer 3</button></li>
-                <li><button class="false">answer 4</button></li>
         </ul>
-           
-        </div>
+        
+       
         <div>
-            <textarea name="" id="result" cols="20" rows="2"></textarea>
+           <p></p>
         </div>
+       
     </div>
-
-
+    <div id="yourScore">Score: <span id="score">0</span></div>
+    <div id="submit">
+        <input id="initials" type="text">
+       <button id="submitBtn">Submit</button>
+    </div>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
