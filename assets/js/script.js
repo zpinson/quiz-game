@@ -70,6 +70,7 @@ function lunchQuiz() {
 function lunchQuestion() {
     //stops the game when all are asked or timer is 0
     if (currentQuestionIndex >= 5 || timerCount === 0) {
+        clearInterval(timer)
         gameEnds()
         return
     }
